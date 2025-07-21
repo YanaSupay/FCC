@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+body{
+    background: url(P_Eugen.png) no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 100, 50, 0.8); /* verde semitransparente */
+    background-blend-mode: multiply;
+}
+
+h1{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin: 50px auto 10px auto;
+    text-align: center;
+    font-size: 50px;
+}
+p{
+    margin: 0 0 20px;
+    font-size: 35px;
+    color: #b9c4a5;
+    text-align: center;
+    font-family: Poppins;
+    font-style: italic;
+}
+label, .titleSub{
+    display: block;
+    margin: 20px auto 0;
+    font-family: Poppins;
+    font-size: 25px;
+    color: #A2CD5A;
+    padding: 20px 2.43em 0px;
+    text-align: left;
+}
+input,
+textarea,
+select{ /* aling for insides*/
+  margin: 10px 10px;
+  min-height: 2em;
+  width: 300px;
+  padding: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: Architects Daughter;
+  font-weight: normal;
+  font-style: normal;  
+
+}
+.survTxt { /*Box of name,email and age*/
+    color: black;
+    border-radius: 7px; 
+    font-family: Architects Daughter;
+    font-size: 20px;
+    width: 85%;
+    font-family: Architects Daughter;
+}
+form{
+    width: 900px;
+    background-color: rgba(13, 51, 2,0.7);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: center;
+}
+fieldset{
+    border: none;
+}
+
+select{
+    width: 85%;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: Architects Daughter;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;       /* stacks radio items vertically */
+  align-items: flex-start;      /* align items to the left */
+  text-align: left;
+  padding: 20px 0px 0px 15px;
+  }
+  
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;              /* vertical spacing between radio items */
+    width: 100%;
+  }
+
+.radio-item span{
+  display: inline-block;
+  font-size: 25px;
+  margin: 0px 0 0 15px;             
+  font-family: Architects Daughter, cursive;
+  color: #218c01;
+  padding: 0;
+}
+
+
+
+.radio-item input[type="radio"] {
+    flex-shrink: 0;          
+    margin: 0;
+    width: auto;
+    min-height: auto;
+}
+
+legend{
+    display: block;
+    font-family: Poppins;
+    font-size: 25px;
+    color: #A2CD5A;
+    padding: 20px 2.43em 0px;
+    text-align: left;
+    margin: 20px auto 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    width: 100%;
+    padding: 20px 2.43em 0px;
+}
+
+.checkbox-item span{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 8px;
+    font-family: Architects Daughter, cursive;
+    color: #218c01;
+    padding: 0;
+}
+
+.checkbox-item input[type="checkbox"] {
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: auto;
+    min-height: auto;
+}
+input[type="checkbox"]{
+    display: inline;
+    padding: 0 0 0px;
+    text-align: left;
+}
+
+.titleSub{
+    margin: 0;
+}
+textarea {
+    text-align: left;        /* horizontal alignment */
+    vertical-align: top;     /* works for inline-blocks */
+    white-space: normal;     /* prevents preserved whitespace from centering text */
+    padding: 4px;
+    box-sizing: border-box;
+    width: 85%;
+    font-family: Architects Daughter, cursive;
+    resize: vertical;        /* if you want it resizable */
+    display: inline-block;   /* needed for vertical-align to work */  
+  }
+  

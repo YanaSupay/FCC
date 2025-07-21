@@ -1,7 +1,9 @@
 <!--Start of the code -->
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">   
   <meta charset="UTF-8">
   <title id="title">Survey exam</title>
   <link rel="stylesheet" href="styles.css">
@@ -9,5 +11,63 @@
 <!--End of the initialization-->
 
 <body>
-    
+    <h1 id="title">PE Survey form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+        <fieldset class="inputText">
+            <label for="name">Name</label>
+            <input class="survTxt" type="text" name="name" id="name" placeholder="Name" required>
+            <label for="email">Email</label>
+            <input class="survTxt" type="email" name="email" id="email" placeholder="user@example.loser" required>
+            <label for="number">How old are you? (mandatory)</label>
+            <input class="survTxt" type="number" name="age" id="number" placeholder="Age" min="18" max="120">
+            <label for="dropdown">How did you find me?</label>
+            <select id="dropdown">
+                <option value="">(Select one)</option>
+                <option value="1">A friend recommended it to me</option>
+                <option value="2">Saw an ad</option>
+                <option value="3">Investigated myself</option>
+            </select>
+        </fieldset>
+        <fieldset class="radio">
+          <legend class="titleSub">Opinion about Eugen (required)</legend>
+          <label class="radio-item" for="dlikeugen">    
+            <input id="dlikeugen" type="radio" name="likeness" value="dont-like">
+            <span>Don't care</span>
+          </label>
+          <label class="radio-item" for="likeugen">  
+            <input id="likeugen" type="radio" name="likeness" value="like">
+            <span>Like</span>
+          </label>
+          <label class="radio-item" for="absolute-waifu">
+            <input id="absolute-waifu" type="radio" name="likeness" value="absoluteWaifu" checked>
+            <span>Absolute waifu</span>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="titleSub">Do you like something about her?</legend>
+          <label class="checkbox-item" for="personality">
+            <input id="personality" type="checkbox">
+            <span>Personality</span>
+            
+          </label>
+          <label class="checkbox-item" for="beauty">
+            <input id="beauty" type="checkbox">
+            <span>Beauty</span>
+          </label>
+          <label class="checkbox-item" for="cdesing">
+            <input id="cdesing" type="checkbox">
+            <span>Character desing</span>
+          </label>
+          <label class="checkbox-item" for="voice">
+            <input id="voice" type="checkbox">
+            <span>Voice</span>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="comments">Any suggestions?:</label>
+          <textarea id="comments" placeholder="write here"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
 </body>
