@@ -5,7 +5,7 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">   
   <meta charset="UTF-8">
-  <title id="title">Survey exam</title>
+  <title id="titleSurvey">Survey exam</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <!--End of the initialization-->
@@ -15,12 +15,12 @@
     <p id="description">Please fill out this form with the required information</p>
     <form id="survey-form">
         <fieldset class="inputText">
-            <label for="name">Name</label>
+            <label id="name-label" for="name">Name</label>
             <input class="survTxt" type="text" name="name" id="name" placeholder="Name" required>
-            <label for="email">Email</label>
+            <label id="email-label" for="email">Email</label>
             <input class="survTxt" type="email" name="email" id="email" placeholder="user@example.loser" required>
-            <label for="number">How old are you? (mandatory)</label>
-            <input class="survTxt" type="number" name="age" id="number" placeholder="Age" min="18" max="120">
+            <label id="number-label" for="number">How old are you?</label>
+            <input class="survTxt" type="number" name="age" id="number" placeholder="Age" min="18" max="120" required>
             <label for="dropdown">How did you find me?</label>
             <select id="dropdown">
                 <option value="">(Select one)</option>
@@ -47,20 +47,19 @@
         <fieldset>
           <legend class="titleSub">Do you like something about her?</legend>
           <label class="checkbox-item" for="personality">
-            <input id="personality" type="checkbox">
+            <input id="personality" type="checkbox" value="personality">
             <span>Personality</span>
-            
           </label>
           <label class="checkbox-item" for="beauty">
-            <input id="beauty" type="checkbox">
+            <input id="beauty" type="checkbox" value="beauty">
             <span>Beauty</span>
           </label>
           <label class="checkbox-item" for="cdesing">
-            <input id="cdesing" type="checkbox">
+            <input id="cdesing" type="checkbox" value="character-design">
             <span>Character desing</span>
           </label>
           <label class="checkbox-item" for="voice">
-            <input id="voice" type="checkbox">
+            <input id="voice" type="checkbox" value="voice">
             <span>Voice</span>
           </label>
         </fieldset>
@@ -68,6 +67,6 @@
           <label for="comments">Any suggestions?:</label>
           <textarea id="comments" placeholder="write here"></textarea>
         </fieldset>
-        <input type="submit" value="Submit" />
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
