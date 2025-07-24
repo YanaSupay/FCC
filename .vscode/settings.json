@@ -1,0 +1,147 @@
+{
+  // 1) Keep your pane background...
+  "workbench.colorCustomizations": {
+    "editor.background": "#312136",
+    "activityBar.activeBackground": "#7f48d8",
+    "activityBar.background": "#7f48d8",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#dd9161",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#7f48d8",
+    "statusBar.background": "#642ac3",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#7f48d8",
+    "statusBarItem.remoteBackground": "#642ac3",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#642ac3",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#642ac399",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "sideBar.background": "#3C2D56",
+    "sideBarTitle.foreground": "#E0B0FF",
+    "sideBarSectionHeader.background": "#1A1325",
+    "sideBarSectionHeader.foreground": "#F2DEFF",
+    "list.activeSelectionBackground": "#3D344B",
+    "list.activeSelectionForeground": "#F2DEFF",
+    "list.hoverBackground": "#5C4583",
+    "editorGroupHeader.tabsBackground": "#3C2D56",
+    "tab.activeBackground": "#513B72",
+    "tab.activeForeground": "#F2DEFF",
+    "tab.inactiveBackground": "#3C2D56",
+    "tab.inactiveForeground": "#B8A1C4",
+    "tab.border": "#3C2D56",
+    "tab.hoverBackground": "#47325E",
+    "tab.unfocusedHoverBackground": "#3A2B4A"
+  },
+
+  // 2) CSS semantic highlighting off...
+  "[css]": {
+    "editor.semanticHighlighting.enabled": false
+
+  },
+  
+  // 3) Token colors with a stronger tag hue
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // — HTML Tags: from #F2DEFF → #F49AC2 (deeper pastel purple) —
+      {
+        "scope": "entity.name.tag.html",
+        "settings": { "foreground": "#F49AC2" }
+      },
+      // keep closing- and doctype-tags too
+      {
+        "scope": [
+          "entity.name.tag.html punctuation.definition.tag.begin.html",
+          "entity.name.tag.html punctuation.definition.tag.end.html"
+        ],
+        "settings": { "foreground": "#F49AC2" }
+      },
+
+      // HTML Attributes
+      {
+        "scope": "entity.other.attribute-name.html",
+        "settings": { "foreground": "#FFFFFF" }
+      },
+      // HTML Attribute Values
+      {
+        "scope": "string.quoted.html",
+        "settings": { "foreground": "#D99AE6" }
+      },
+      // HTML Content Text
+      {
+        "scope": ["text.html.basic", "text.html"],
+        "settings": { "foreground": "#FFFFFF" }
+      },
+
+      // CSS Selectors: from #EFD6FF → #C6A3E8
+      {
+        "scope": "entity.name.tag.css",
+        "settings": { "foreground": "#F49AC2" }
+      },
+      // CSS Property Names
+      {
+        "scope": "support.type.property-name.css",
+        "settings": { "foreground": "#D4B0EB" }
+      },
+      // CSS Property Values
+      {
+        "scope": "support.constant.property-value.css",
+        "settings": { "foreground": "#B983E6" }
+      },
+      // CSS Class Selectors
+      {
+        "scope": "entity.other.attribute-name.class.css",
+        "settings": { "foreground": "#FC3469" }
+      },
+
+      // JavaScript Keywords
+      {
+        "scope": "keyword.control.js",
+        "settings": { "foreground": "#F7E6FF" }
+      },
+      // JavaScript Function Names
+      {
+        "scope": "entity.name.function.js",
+        "settings": { "foreground": "#DCA3F5" }
+      },
+      // JavaScript Variables
+      {
+        "scope": "variable.other.readwrite.js",
+        "settings": { "foreground": "#C57CE6" }
+      },
+      // JavaScript Strings
+      {
+        "scope": "string.quoted.double.js",
+        "settings": { "foreground": "#FBEAFF" }
+      },
+      // JavaScript Numbers
+      {
+        "scope": "constant.numeric.js",
+        "settings": { "foreground": "#E2BFF4" }
+      },
+      // JavaScript Comments
+      {
+        "scope": "comment.js",
+        "settings": {
+          "foreground": "#A293A8",
+          "fontStyle": "italic"
+        }
+      },
+      // === Color all "=" operators/punctuation ===
+    {
+      "scope": [
+        "keyword.operator.assignment",
+        "keyword.operator",
+        "punctuation.separator.key-value.html"
+      ],
+      "settings": {
+        "foreground": "#FC6C92"   // swap in your favorite pastel purple
+      }
+    }
+    ]
+    
+  },
+  "peacock.color": "#642AC3"
+}
