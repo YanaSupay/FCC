@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Big Shot";
+  src: url("fonts/BigShot.ttf") format("truetype");
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+#spamtom {
+  width: max(600px);
+  background-color: 0;
+  padding: 0.4rem;
+}
