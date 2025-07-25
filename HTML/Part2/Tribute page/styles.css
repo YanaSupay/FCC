@@ -11,7 +11,12 @@
   font-family: "Datalegreya";
   src: url("fonts/Datalegreyat.otf") format("opentype");
 }
-
+/*Rules*/
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 /* Head part */
 header {
   width: 100%;
@@ -102,10 +107,10 @@ main {
 body {
   background-color: #fff3e0;
 }
-#spamtom {
+#image {
   display: block;
-  max-width: 900px;
-  width: 100%;
+  max-width: 100%;
+  width: 900px;
   height: auto;
   margin: 0 auto;
   padding: 50px 0 0;
@@ -119,6 +124,14 @@ body {
   padding-top: -20px;
 }
 
+#img-caption {
+  font-family: "Big Shot", sans-serif;
+  color: #281f1f;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+  padding-top: -20px;
+}
 .start {
   background-color: #f9e29f;
   width: 90%;
@@ -183,4 +196,29 @@ body {
 
 div {
   margin-bottom: 100px;
+}
+
+.bigshot {
+  font-family: "Big Shot", sans-serif;
+  font-size: 3rem;
+  color: #281f1f;
+  text-align: center;
+  margin: 30px 0;
+}
+.wiki {
+  font-size: 30px;
+}
+.link {
+  font-family: "Big Shot", sans-serif;
+  text-decoration: none;
+  color: #edb3b3;
+}
+.incred {
+  font-family: "Big Shot", sans-serif;
+}
+
+.link:hover {
+  color: #f9e29f;
+  padding: 5px;
+  border-radius: 5px;
 }
