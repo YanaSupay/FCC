@@ -1,19 +1,186 @@
+/*fonts*/
 @font-face {
   font-family: "Big Shot";
   src: url("fonts/BigShot.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Ugly";
+  src: url(fonts/UglyTypist.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Datalegreya";
+  src: url("fonts/Datalegreyat.otf") format("opentype");
+}
 
+/* Head part */
 header {
   width: 100%;
-  height: 100px;
-  background-color: #1b1b32;
+  height: 200px;
+  background-color: #281f1f;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   top: 0;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  display: inline-block;
+  color: #fff;
+  font-family: "Big Shot", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+}
+header h2 {
+  display: inline-block;
+  color: #fff;
+  align-items: center;
+  justify-content: block;
+  margin-top: 140px;
+  position: absolute;
+  font-family: "Big Shot", sans-serif;
+}
+
+nav {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 30px;
+  gap: 30px; /* Space between History and Character traits */
+}
+
+.left {
+  color: #edb3b3;
+}
+
+.right {
+  color: #f9e29f;
+}
+.left,
+.right {
+  font-family: "Ugly", serif;
+  text-decoration: none;
+}
+.left:hover {
+  font-family: "Ugly", serif;
+  background-color: #fff3e0;
+  border-radius: 5px;
+  outline: 5px solid #fff3e0;
+  color: #c04384;
+}
+.right:hover {
+  font-family: "Ugly", serif;
+  background-color: #fff3e0;
+  border-radius: 5px;
+  outline: 5px solid #fff3e0;
+  color: #b8860b;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+/* Main part */
+main {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  background-color: #fff3e0;
 }
 #spamtom {
-  width: max(600px);
-  background-color: 0;
-  padding: 0.4rem;
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+.subtitle {
+  font-family: "Big Shot", sans-serif;
+  color: #281f1f;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+  padding-top: -20px;
+}
+
+.start {
+  background-color: #f9e29f;
+  width: 90%;
+  height: 800px;
+  margin: -20px auto;
+}
+
+/*About section*/
+.intro h2 {
+  font-family: "PlataSansRegular";
+  font-weight: 2000;
+  font-style: normal;
+  font-size: 3rem;
+  padding: 50px 0 70px 0;
+  text-align: center;
+  color: #281f1f;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro span,
+.intro ul li {
+  font-family: "PlataSansRegular";
+  font-size: 1.6rem;
+  padding: 0 0 0 0;
+  color: #281f1f;
+}
+.intro span {
+  display: block;
+  font-weight: bolder;
+  padding: 0 0 40px 0;
+  margin-left: -50px;
+  font-size: 2rem;
+}
+
+.intro ul li {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+  font-family: "PlataSansRegular";
+  font-size: 1.6rem;
+  color: #281f1f;
+}
+.intro ul {
+  list-style: none;
+  margin: 0;
+  margin-left: -150px;
+}
+.intro ul li::before {
+  content: url("images/Pipis.png");
+  transform: scale(0.15);
+  margin-right: -40px;
+  margin-top: -50px;
+  flex-shrink: 0;
+}
+
+div {
+  margin-bottom: 100px;
 }
