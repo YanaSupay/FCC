@@ -1,3 +1,4 @@
+/*Boder box and rules*/
 html {
   box-sizing: border-box;
 }
@@ -6,4 +7,130 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/*Font*/
+@font-face {
+  font-family: "Deltarune";
+  src: url(Fonts/Deltarune.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roaring";
+  src: url(Fonts/Roarin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Young";
+  src: url(Fonts/Young.woff2) format("woff2");
+}
+/*Left side*/
+.title {
+  font-size: 1.9em;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  overflow-x: auto;
+  font-family: "Deltarune", sans-serif;
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #a33ad0;
+  background-color: #a00f78;
+}
+
+#navbar ul {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  left: -30px;
+  list-style: none;
+  position: relative;
+  width: 120%;
+  height: 80px;
+  text-align: center;
+  border: 1px solid #a33ad0;
+}
+
+#navbar a {
+  font-family: "Roaring", sans-serif;
+  font-size: 2em;
+  display: block;
+  position: inherit;
+  top: 20px;
+  color: #88d1da;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html {
+  background-color: #4631a6;
+}
+/*Right side*/
+#main-doc {
+  display: flex-box;
+  position: relative;
+  margin-left: 300px;
+}
+
+header {
+  color: #88d1da;
+  padding-left: 30px;
+  font-family: "Deltarune", sans-serif;
+  font-size: 2rem;
+}
+
+p,
+h3,
+.main-section li {
+  font-family: "Young", sans-serif;
+  font-size: 1.5rem;
+  padding-left: 50px;
+  color: #0f1e1b;
+}
+
+span,
+ul h3 {
+  color: #ffffff;
+}
+
+code {
+  color: #a33ad0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.main-section li {
+  list-style: none;
+  padding-left: 80px;
+  padding-bottom: 15px;
+}
+
+.main-section {
+  padding-bottom: 50px;
+  padding-top: -10px;
 }

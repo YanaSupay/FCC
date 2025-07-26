@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <nav>
-      <h1>Deltarune Documentation</h1>
+    <nav id="navbar">
+      <header class="title">Deltarune Documentation</header>
       <ul>
-        <a href="#Introduction">Section 1</a>
-        <a href="#What_know">Section 2</a>
-        <a href="#Game_Story">Section 3</a>
-        <a href="#section4">Section 4</a>
-        <a href="#section5">Section 5</a>
-        <a href="#section6">Section 6</a>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_You_Should_Already_Know"
+            >What you should Already know</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Game_Story">Game story</a></li>
+        <li><a class="nav-link" href="#Key_Mechanics">Key Mechanics</a></li>
+        <li><a class="nav-link" href="#Characters">Characters</a></li>
+        <li>
+          <a class="nav-link" href="#Technical_information"
+            >Technical information</a
+          >
+        </li>
       </ul>
     </nav>
     <main id="main-doc">
-      <section class="main-section">
-        <h2 id="Introduction">Introduction</h2>
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
         <p>
           Deltarune is an episodic role-playing game developed and written by
           Toby Fox, serving as a parallel story to Undertale. Chapters 1 & 2
@@ -30,44 +38,142 @@
           updates to players who own Chapters 1-4
         </p>
       </section>
-      <section class="main-section">
-        <h2 id="What_know">What You Should Already Know</h2>
+      <section class="main-section" id="What_You_Should_Already_Know">
+        <header>What You Should Already Know</header>
         <ul>
-          <il>
-            Familiarity with Undertale mechanics (e.g. compositional elements,
-            bullet-dodging, moral combat) helps comprehension.
-          </il>
-          <il>
-            Basic RPG terms: HP, ATK, DEF, TP, EXP, and character levels—some
-            adapted from Undertale.
-          </il>
-          <il>
+          <p>
+            Familiarity with <span>Undertale mechanics </span>(e.g.
+            compositional elements, bullet-dodging, moral combat) helps
+            comprehension.
+          </p>
+          <p>
+            <span>Basic RPG terms: </span>HP, ATK, DEF, TP, EXP, and character
+            levels—some adapted from Undertale.
+          </p>
+          <p>
             Awareness of chapter-based episodic narrative structure, including
-            branching choices and different routes like the Weird Route
-          </il>
+            branching choices and different routes like the
+            <span>Weird Route </span>
+          </p>
         </ul>
       </section>
-      <section class="main-section">
-        <h2 id="Game_Story">Game Story</h2>
-        <p>
-          The player controls Kris, a non-binary human teen from Hometown, who
-          unexpectedly becomes a hero by entering a "Dark World" alongside
-          classmates Susie and Ralsei.
-        </p>
-        <p>
-          Each chapter has a self-contained storyline centered around sealing a
-          Dark Fountain, while also building the larger narrative arc across
-          chapters
-        </p>
-        <p>
-          Chapter 1 introduces the Dark World's first throne and characters like
-          Lancer and King. Chapters 3-4 offer broader worlds like cyber-themed
-          areas, game-show segments, and the absurd humor Toby Fox is known for
-        </p>
+      <section class="main-section" id="Game_Story">
+        <header>Game Story</header>
+        <ul>
+          <p>
+            The player controls <span>Kris, a non-binary human</span> teen from
+            Hometown, who unexpectedly becomes a hero by entering a "Dark World"
+            alongside classmates Susie and Ralsei.
+          </p>
+          <p>
+            Each <span>chapter </span>has a self-contained storyline centered
+            around sealing a Dark Fountain, while also building the larger
+            narrative arc across chapters
+          </p>
+          <p>
+            Chapter 1 introduces the <span>Dark World's </span>first throne and
+            characters like Lancer and King. Chapters 2-4 offer broader worlds
+            like cyber-themed areas, game-show segments, and the absurd humor
+            Toby Fox is known for
+          </p>
+        </ul>
       </section>
-      <section class="main-section"></section>
-      <section class="main-section"></section>
-      <section class="main-section"></section>
+      <section class="main-section" id="Key_Mechanics">
+        <header>Key Mechanics</header>
+        <ul>
+          <p>
+            <span>Real-time overworld: </span>you can run by holding Cancel, or
+            enable Auto-Run in Dark World config settings
+          </p>
+          <p>
+            <span>Save points</span> in each chapter fully restore HP and act as
+            checkpoint markers.
+          </p>
+          <p>
+            The game records <span>Completion Data </span>which carries items,
+            characters recruited, and choices into subsequent chapters. If
+            starting fresh, the game provides a default state with default gear
+            and assumed pacifist conduct
+          </p>
+          <p>
+            <span>Combat: </span>turn-based with options to Fight, Act, Item,
+            Magic, Spare, or Defend. Enemies can be fought, spared, or scared
+            off—EXPerence is not earned in Chapter 1 because no enemies die, but
+            EXP starts appearing from Chapter 2 onward, especially on Weird
+            Routes
+          </p>
+          <p>
+            <span>Tension Points (TP)</span> build when you graze/dodge attacks
+            or use Defend—used to cast spells or powerful acts
+          </p>
+        </ul>
+      </section>
+      <section class="main-section" id="Characters">
+        <header>Characters</header>
+        <ul>
+          <p>
+            <span>Kris: </span>The silent protagonist controlled indirectly,
+            reacts in ways that may surprise the player—portrayed distinctly
+            from a blank avatar
+          </p>
+          <p>
+            <span>Susie: </span>A rebellious monster character who develops
+            through forced teamwork and chaotic combat style
+          </p>
+          <p>
+            <span>Ralsei: </span>The gentle Dark World prince who encourages
+            pacifism and offers healing and support magic.
+          </p>
+          <p>
+            <span>Noelle: </span>A light-world classmate who joins the party in
+            Chapter 2. She wields ice magic (IceShock, SnowGrave) and plays a
+            key role in Weird Route progression and Chapter 4 exploration
+          </p>
+          <p>
+            <span>Berdly:</span> Noelle's friend and rival, whose prideful
+            intellect gradually softens. Though not a full-time party member,
+            Berdly becomes an ally by the end of Chapter 2 and recurs in Chapter
+            4
+          </p>
+        </ul>
+      </section>
+      <section class="main-section" id="Technical_information">
+        <header>Technical information</header>
+        <ul class="tech">
+          <p>
+            <span>Engine:</span> GameMaker Studio 2; developed and primarily
+            directed by Toby Fox with art by Temmie Chang
+          </p>
+          <h3>Stats system:</h3>
+          <li>
+            <code>HP:</code> non-lethal enemy defeat, revived with items or
+            spells.
+          </li>
+          <li>
+            <code>ATK</code> / <code>DEF:</code> Attack power and defense
+            calculation (defending reduces damage further; defense triples when
+            calculating incoming damage)
+          </li>
+          <li>
+            <code>EXP</code> /<code> LV:</code> Experience is hidden or inactive
+            early on; visible growth begins Chapter 2 or on certain routes. No
+            experience is earned when enemies flee or battles end prematurely.
+          </li>
+          <p>
+            <span>Config options:</span> text skip, auto-run, fullscreen toggle
+            <span>(F4 on PC)</span>, instant text box advance via holding Cancel
+            or Menu button
+          </p>
+          <h3>Party Attacks & Accuracy</h3>
+          <li>
+            <code>Damage is computed as: </code>round((ATK x Accuracy)/20 - 3 x
+            Enemy DEF)
+          </li>
+          <li>
+            A miss still deals damage if defense is <span> negative </span>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
