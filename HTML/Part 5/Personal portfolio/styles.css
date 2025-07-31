@@ -1,0 +1,177 @@
+/*Base*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: "Copper";
+  src: url("fonts/CopperBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Creamy sugar";
+  src: url("Fonts/CreamySugar.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TimerBurner";
+  src: url("Fonts/TimerBurner.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Scabber";
+  src: url("Fonts/Scabber.ttf") format("truetype");
+}
+
+/*Colors*/
+
+:root {
+  --clean-white: #f8f9fa;
+  --deep-charcoal: #2c3e50;
+  --light-purple: #c5b0cd;
+  --beige: #f3e2d4;
+  --dark-blue: #17313e;
+  --dark-blue-light: #415e72;
+}
+
+/*Start*/
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/*Base*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+}
+
+/*heading*/ /*Header*/
+
+#hero {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 11rem;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  background-color: var(--beige);
+  margin: 0;
+}
+
+#hero h1 {
+  font-size: 4.5rem;
+  padding-left: 4rem;
+  color: var(--deep-charcoal);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Copper", sans-serif;
+}
+
+#hero ul {
+  padding-right: 5rem;
+}
+
+#hero li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+#hero a {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  mix-blend-mode: darken;
+  font-family: "Creamy sugar", sans-serif;
+  text-decoration: none;
+}
+
+#hero a:hover {
+  color: var(--light-purple);
+  content: "";
+}
+
+#hero a::before,
+#hero a::after {
+  content: "[";
+  visibility: hidden;
+}
+
+#hero a::after {
+  content: "]";
+}
+
+#hero a:hover::before,
+#hero a:hover::after {
+  visibility: visible;
+}
+
+/*heading*/ /*Title*/
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#welcome-section h1 {
+  font-size: 7rem;
+  color: var(--beige);
+  font-family: "TimerBurner", sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#welcome-section p {
+  font-size: 2.5rem;
+  width: 60%;
+  text-align: center;
+  color: var(--light-purple);
+  font-family: "Creamy sugar", sans-serif;
+}
+
+/*Body*/ /*Section 1:about*/
+
+#about {
+  height: 115vh;
+  background-color: var(--dark-blue-light);
+}
+
+section h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--beige);
+  font-family: "Copper", sans-serif;
+  padding: 3rem 0 8rem 0;
+}
+
+section {
+  scroll-margin-top: 11rem;
+}
+
+#about p {
+  margin: auto 10rem 4rem;
+  font-size: 3rem;
+  color: var(--light-purple);
+  width: 80%;
+  text-align: justify;
+  font-family: "Scabber", sans-serif;
+}
+
+#about p:last-of-type {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--dark-blue);
+}
