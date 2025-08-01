@@ -65,6 +65,9 @@ html {
   align-items: center;
   background-color: var(--beige);
   margin: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--dark-blue);
+  cursor: default;
 }
 
 #hero h1 {
@@ -130,6 +133,7 @@ html {
   font-family: "TimerBurner", sans-serif;
   margin-bottom: 1.5rem;
   text-align: center;
+  cursor: default;
 }
 
 #welcome-section p {
@@ -138,13 +142,32 @@ html {
   text-align: center;
   color: var(--light-purple);
   font-family: "Creamy sugar", sans-serif;
+  cursor: default;
 }
 
 /*Body*/ /*Section 1:about*/
 
 #about {
-  height: 115vh;
+  height: 110vh;
   background-color: var(--dark-blue-light);
+  z-index: -1;
+  cursor: default;
+}
+
+#about .main-part {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  padding-bottom: 4rem;
+  margin: auto 0;
+}
+
+#about .text-about {
+  width: 50%;
+  margin-left: 5rem;
+  margin: 0;
 }
 
 section h2 {
@@ -152,26 +175,219 @@ section h2 {
   text-align: center;
   justify-content: center;
   font-size: 5rem;
-  color: var(--beige);
+  color: var(--dark-blue);
   font-family: "Copper", sans-serif;
-  padding: 3rem 0 8rem 0;
+  padding: 3rem 0 4rem 0;
+  z-index: 2;
 }
 
 section {
   scroll-margin-top: 11rem;
+  cursor: default;
 }
 
 #about p {
-  margin: auto 10rem 4rem;
-  font-size: 3rem;
+  margin: auto 0 4rem;
+  font-size: 2.5rem;
   color: var(--light-purple);
-  width: 80%;
+
   text-align: justify;
   font-family: "Scabber", sans-serif;
+  z-index: 1;
 }
 
-#about p:last-of-type {
+#about .message {
   font-size: 5rem;
   text-align: center;
   color: var(--dark-blue);
+  width: 100%;
+}
+
+#about .temmie-image {
+  display: block;
+  z-index: 0;
+  height: 40rem;
+  width: auto;
+  object-fit: contain;
+  position: relative;
+  top: -2rem;
+}
+
+/*Section 2: Projects*/
+
+#projects {
+  height: 200vh;
+  background-color: var(--light-purple);
+}
+
+.grid-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5rem;
+  width: 100vw;
+  padding-left: 5%;
+}
+
+.project-image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+div .project1,
+div .project2,
+div .project3,
+div .project4 {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 38rem;
+  height: auto;
+  min-height: 25rem;
+  border: 0.5rem solid var(--dark-blue);
+  cursor: pointer;
+}
+
+.project1 h3,
+.project2 h3,
+.project3 h3,
+.project4 h3 {
+  font-size: 2.63rem;
+  font-family: "Scabber", sans-serif;
+  text-align: center;
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.project1 a,
+.project2 a,
+.project3 a,
+.project4 a {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.project-link {
+  text-decoration: none;
+  display: inline-block;
+  max-width: 38rem;
+}
+
+.project-link:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+.project-link h3::before,
+.project-link h3::after {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  content: "";
+}
+.project-link h3::before {
+  content: "< ";
+  color: var(--light-purple);
+}
+
+.project-link h3::after {
+  content: " />";
+  color: var(--light-purple);
+}
+
+.project-link:hover h3::before,
+.project-link:hover h3::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button {
+  display: flex;
+  font-family: "Scabber", sans-serif;
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  font-size: 2.63rem;
+  padding: 3rem 0;
+  justify-content: center;
+  width: 25%;
+  margin: 2rem auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  scale: 1.05;
+  color: var(--light-purple);
+  background-color: var(--dark-blue);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: scale 0.3s ease;
+}
+
+/*Section 3: */
+
+#contact {
+  height: calc(100vh - 11rem);
+  background-color: var(--clean-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h1 {
+  font-size: 7rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  font-family: "Scabber", sans-serif;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+#contact p {
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  font-family: "Scabber", sans-serif;
+  text-align: center;
+  width: 60%;
+  padding-bottom: 4rem;
+}
+
+#contact .social-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+  align-items: center;
+}
+
+#contact a {
+  font-size: 4rem;
+  color: var(--light-purple);
+  font-family: "Scabber", sans-serif;
+  text-decoration: none;
+}
+
+#contact .social-icons a:hover {
+  transform: translateY(8px);
+  transition: transform 0.3s ease;
+}
+
+/*Footer*/
+
+footer {
+  cursor: default;
+  display: flex;
+  background-color: var(--beige);
+  color: var(--dark-blue);
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: "Scabber", sans-serif;
+  border-top: 1px solid var(--dark-blue);
 }

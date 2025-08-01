@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <main>
@@ -20,38 +24,126 @@
           </nav>
         </header>
         <div id="welcome-section">
-          <h1 class="Title">oscar tem doin TECH <br />n' ART n' CHAOS!!</h1>
+          <h1>oscar tem doin TECH <br />n' ART n' CHAOS!!</h1>
           <p class="publish-date">beginnings of a programmer</p>
         </div>
       </section>
       <section id="about">
         <h2>About Me</h2>
-        <p>
-          hOI! i'm oscar alejandro polanco escorcia!! i do lots of cool techy
-          stuff like makin' circuits go beep-boop, makin' webs look SHINY, and
-          makin' games where u gotta press da button at da PERFECT TIME!!! so
-          skilled... such wow...
-        </p>
-        <p>
-          i luv learnin how stuff works!! like... why code no work? (maybe
-          forgot semicolon) or... how to make a segway not fall over (no easy,
-          need balance magic)
-        </p>
-        <p>
-          me combine smarts + art + WEIRD FUN IDEAS to make things dat are both
-          smartie-pants AND sparklepants!! 💻🎨✨ so if u want sumthing cool, or
-          weird, or COOL-WEIRD... u found da right tem!!
-        </p>
-        <p>(also bring tem flakes pls)</p>
+        <div class="main-part">
+          <div class="text-about">
+            <p>
+              hOI! i'm oscar polanco!! i do lots of cool techy stuff like makin'
+              circuits go beep-boop, makin' webs look SHINY, and makin' games
+              where u gotta press da button at da PERFECT TIME!!! so skilled...
+              such wow...
+            </p>
+            <p>
+              i luv learnin how stuff works!! like... why code no work? (maybe
+              forgot semicolon) or... how to make a segway not fall over (no
+              easy, need balance magic)
+            </p>
+            <p>
+              me combine smarts + art + WEIRD FUN IDEAS to make things dat are
+              both smartie-pants AND sparklepants!! 💻🎨✨ so if u want sumthing
+              cool, or weird, or COOL-WEIRD... u found da right tem!!
+            </p>
+          </div>
+          <img src="Images/Temmie.png" alt="Temmie" class="temmie-image" />
+        </div>
+        <p class="message">(also bring tem flakes pls)</p>
       </section>
       <section id="projects">
-        <h2>Projects</h2>
+        <h2>A few of my projects</h2>
         <div class="grid-wrapper">
           <div class="grid-item">
-            <div class="project1"></div>
+            <a
+              target="_blank"
+              href="https://github.com/YanaSupay/FCC/tree/main/HTML/Part%202/Tribute%20page"
+              class="project-link"
+            >
+              <div class="project1 project-tile">
+                <img
+                  src="Images/Tribute.png"
+                  alt="Project 1"
+                  class="project-image"
+                />
+                <h3>Tribute Page</h3>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/YanaSupay/FCC/tree/main/HTML/Part%204/Landing%20page"
+              class="project-link"
+            >
+              <div class="project2 project-tile">
+                <img
+                  src="Images/SpamSwep.png"
+                  alt="Project 2"
+                  class="project-image"
+                />
+                <h3>Landing page</h3>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/YanaSupay/FCC/tree/main/HTML/Part%203/Documentation%20page"
+              class="project-link project-tile"
+            >
+              <div class="project3">
+                <img
+                  src="Images/DeltaDoc.png"
+                  alt="Project 3"
+                  class="project-image"
+                />
+                <h3>Documentation page</h3>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/YanaSupay/FCC/tree/main/HTML/Part%201/Survey"
+              class="project-link project-tile"
+            >
+              <div class="project4">
+                <img
+                  src="Images/Surv.png"
+                  alt="Project 4"
+                  class="project-image project-tile"
+                />
+                <h3>Survey Page</h3>
+              </div>
+            </a>
           </div>
+        </div>
+        <a
+          class="button"
+          target="_blank"
+          href="https://github.com/YanaSupay/FCC"
+          >See moer...></a
+        >
+      </section>
+      <section id="contact">
+        <h1>me + you = work together</h1>
+        <p>Learning by day</p>
+        <div class="social-icons">
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://twitter.com/TheDarkJupiter/"
+            ><i class="fa-brands fa-twitter"></i> Twitter</a
+          >
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://github.com/YanaSupay"
+            ><i class="fa-brands fa-github"></i> Github</a
+          >
         </div>
       </section>
     </main>
+    <footer>
+      <p>©2025 YanaSupay. All rights reserved.</p>
+      <p>Made with love and a sprinkle of chaos</p>
+    </footer>
   </body>
 </html>
